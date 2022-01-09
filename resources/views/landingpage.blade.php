@@ -33,7 +33,7 @@
             }
             .btn-outline-white:hover {
                 border-color: white;
-                color: none;
+                color: rgb(42, 182, 0);
                 border: 1px solid white;
                 background-color: white;
                 border-radius: 30px;
