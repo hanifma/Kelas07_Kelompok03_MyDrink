@@ -1,0 +1,32 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    background-image: url('../img/bg-lp.jpg'); /* The image used */
+}
+.nav-link{
+    color: white;
+}
+.nav-link:hover{
+    color: rgb(42, 182, 0);
+    text-decoration: none;
+}
+.btn-outline-white {
+    border-color: white;
+    color: white;
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 10px 30px; 
+    margin: 20px;
+}
+.btn-outline-white:hover {
+    border-color: white;
+    color: rgb(42, 182, 0);
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 30px;
+    padding: 10px 30px; 
+    margin: 20px;
+    text-decoration: none;
+}
+.content{
+    margin-top: 300px;
+}

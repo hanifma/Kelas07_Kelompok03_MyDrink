@@ -14,13 +14,18 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-<<<<<<< HEAD
     return view('welcome');
 });
 
 Route::get('/home', function(){
-    return view('home');
-=======
+    //return view('home');
     return view('landingpage');
->>>>>>> 7103700ea7c0e91fc62b136bc79edff950847cec
+});
+
+Route::get('/login', function(){
+    return view('login');
+});
+
+Route::get('/register', function(){
+    return view('register');
 });
