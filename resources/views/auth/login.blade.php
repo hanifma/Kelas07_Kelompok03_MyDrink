@@ -25,14 +25,15 @@
                         </div>
                     </div>
                     <!-- form -->
-                    <form action="" method="POST" class="shadow p-4">
+                    <form action="{{ route('login.perform') }}" method="POST" class="shadow p-4">
+                        @csrf
                         <div class="mb-3">
                             <label>Email</label>
-                            <input type="email" name="email" class="form-control" placeholder="Email">
+                            <input type="email" name="email" class="form-control" placeholder="Email" required>
                         </div>
                         <div class="mb-3">
                             <label>Password</label>
-                            <input type="password" name="password" class="form-control" placeholder="Password">
+                            <input type="password" name="password" class="form-control" placeholder="Password" required>
                         </div>
                         <label class="mb-3">
                             <input type="checkbox" name="ingatsaya"> Ingat saya
@@ -42,9 +43,9 @@
                             <button type="submit" name="" class="btn btn-violet">Login</button>
                         </div>
                         <hr>
-                        <p class="text-center">Tidak punya akun?<a href="#">Daftar</a></p>
+                        <p class="text-center">Tidak punya akun?<a href="{{ route('register.show')}}">Daftar</a></p>
                         <p class="text-center fw-light">atau ke</p>
-                        <p class="text-center"><a href="#">Beranda</a></p>
+                        <p class="text-center"><a href="index">Beranda</a></p>
                     </form>
                 </div>
             </div>

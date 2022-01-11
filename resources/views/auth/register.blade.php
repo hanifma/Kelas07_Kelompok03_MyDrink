@@ -38,14 +38,18 @@
                 </div>
 
                 <!-- form -->
-                <form action="" method="POST" class="shadow p-4">
+                <form action="{{ route('register.perform') }}" method="POST" class="shadow p-4">
+                    @csrf
                     <div class="mb-3">
                         <label for="nama">Nama</label>
-                        <input type="text" class="form-control" name="nama" id="nama" placeholder="Nama anda">
+                        <input type="text" class="form-control" name="name" id="name" placeholder="Nama anda">
                     </div>
                     <div class="mb-3">
                         <label for="Password">Email</label>
                         <input type="email" class="form-control" name="email" id="email" placeholder="Email anda">
+                        @if ($errors->has('email'))
+                            <span class="text-danger text-left">{{ $errors->first('email') }}</span>
+                        @endif
                     </div>
                     <div class="mb-3">
                         <div class="row">
@@ -53,21 +57,24 @@
                                 <label for="Password">Password</label>
                                 <input type="password" class="form-control" name="password" id="password" placeholder="Password">
                             </div>
+                            @if ($errors->has('password'))
+                                <span class="text-danger text-left">{{ $errors->first('password') }}</span>
+                            @endif
                             <div class="col">
                                 <label for="Password">Confirm password</label>
                                 <input type="password" class="form-control" name="cpassword" id="cpassword" placeholder="Konfirmasi Password">
+                                @if ($errors->has('cpassword'))
+                                    <span class="text-danger text-left">{{ $errors->first('cpassword') }}</span>
+                                @endif
                             </div>
                         </div>
                     </div>
                     <!-- <input type="hidden" name="level" id="level" value="user" readonly> -->
                     <div class="mb-3 d-flex justify-content-end">
-                        <button type="submit" name="submit" class="btn btn-violet">Daftar</button>
+                        <button type="submit" class="btn btn-violet">Daftar</button>
                     </div>
-
                     <hr>
-
-                    <p class="text-center mb-0">Sudah punya akun? <a href="login.php">Login</a></p>
-
+                    <p class="text-center mb-0">Sudah punya akun? <a href="{{ route('login.perform')}}">Login</a></p>
                 </form>
             </div>
         </div>

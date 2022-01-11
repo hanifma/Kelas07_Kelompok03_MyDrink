@@ -56,7 +56,7 @@
                     <a class="nav-link" href="https://www.maklonminuman.co.id/tentang/">Tentang</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://www.maklonminuman.co.id/produk/">Produk</a>
+                    <a class="nav-link" href="product">Produk</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="https://www.maklonminuman.co.id/tentang/prosedur-maklon/">Prosedur Maklon</a>
@@ -70,8 +70,8 @@
                     <img src="img/logo.png">
                 </div>
                 <div class="mt-2">
-                    <a class="btn-outline-white" href="">Masuk</a>
-                    <a class="btn-outline-white" href="">Daftar</a>
+                    <a class="btn-outline-white" href="#">Masuk</a>
+                    <a class="btn-outline-white" href="#">Daftar</a>
                 </div>
             </div>
     </body>
