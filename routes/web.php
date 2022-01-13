@@ -75,3 +75,13 @@ Route::get('/teshome', function(){
     return view('newhome');
 >>>>>>> 8c63de5 (Penambahan MVC)
 });
+
+Route::get('/profil', function () {
+    return view('profil.profil');
+});
+
+Route::get('/cart', function () {
+    return view('pemesanan.cart');
+});
+
+

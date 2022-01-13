@@ -2,8 +2,8 @@
 
 @section('content')
 <main>
-    <div class="container">
-        <div class="py-5 text-center">
+    <div class="container bg-white mt-3">
+        <div class="py-5">
 
         <div class="row g-5">
         <div class="col-md-5 col-lg-4 order-md-last">
@@ -204,7 +204,7 @@
 
             <hr class="my-4">
 
-            <button class="w-100 btn btn-primary btn-lg" type="submit">Continue to checkout</button>
+            <button class="w-100 btn btn-green btn-lg" type="submit">Continue to checkout</button>
             </form>
         </div>
         </div>
