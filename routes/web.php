@@ -37,3 +37,13 @@ Route::get('/pemesanan', function () {
 Route::get('/checkout', function () {
     return view('pemesanan.checkout');
 });
+
+Route::get('/profil', function () {
+    return view('profil.profil');
+});
+
+Route::get('/cart', function () {
+    return view('pemesanan.cart');
+});
+
+
