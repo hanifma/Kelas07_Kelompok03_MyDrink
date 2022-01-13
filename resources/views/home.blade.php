@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @extends('main')
 
 @section('content')
@@ -22,3 +23,49 @@
     </div>
   </div>
 @endsection
+=======
+@extends('layouts.newhome')
+
+@section('content')
+<div class="container">
+    <div class="row justify-content-between">
+            <div class="card" style="width: 15rem">
+                <div class="card-header">{{ __('Pesanan Terbayar') }}</div>
+
+                <div class="card-body">
+
+                    {{ count(App\Models\Transaction::where('status', 'terbayar')->get()) }}
+                </div>
+            </div>
+            <div class="card" style="width: 15rem">
+                <div class="card-header">{{ __('Pesanan Diproses') }}</div>
+
+                <div class="card-body">
+                    
+
+                    {{ count(App\Models\Transaction::where('status', 'diproses')->get()) }}
+                </div>
+            </div>
+            <div class="card" style="width: 15rem">
+                <div class="card-header">{{ __('Pesanan Diantar') }}</div>
+
+                <div class="card-body">
+                    
+
+                    {{ count(App\Models\Transaction::where('status', 'pengantaran')->get()) }}
+                </div>
+            </div>
+
+            <div class="card" style="width: 15rem">
+                <div class="card-header">{{ __('Pesanan Selesai') }}</div>
+
+                <div class="card-body">
+                    
+
+                    {{ count(App\Models\Transaction::where('status', 'selesai')->get()) }}
+                </div>
+            </div>
+    </div>
+</div>
+@endsection
+>>>>>>> 8c63de5 (Penambahan MVC)
